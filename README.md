@@ -1,7 +1,7 @@
 # MLExchange Dash component editor
 This script creates adaptive Dash GUI components from keywords (JSON formated data).
 
-It currently support 8 types of Dash GUI components: 3 types of [input forms](https://dash-bootstrap-components.opensource.faculty.ai/docs/components/input/) (int, float, str), [slider](https://dash.plotly.com/dash-core-components/slider), [dropdown](https://dash.plotly.com/dash-core-components/dropdown), [radio items](https://dash.plotly.com/dash-core-components/radioitems), [boolean toggle switch](https://dash.plotly.com/dash-daq/toggleswitch), and [image](https://dash.plotly.com/dash-html-components/img). The corresponding keyword values are 'int', 'float', 'str', 'slider', 'dropdown', 'radio', 'bool', and 'img'.
+It currently supports 8 types of Dash GUI components: 3 types of [input forms](https://dash-bootstrap-components.opensource.faculty.ai/docs/components/input/) (int, float, str), [slider](https://dash.plotly.com/dash-core-components/slider), [dropdown](https://dash.plotly.com/dash-core-components/dropdown), [radio items](https://dash.plotly.com/dash-core-components/radioitems), [boolean toggle switch](https://dash.plotly.com/dash-daq/toggleswitch), and [image](https://dash.plotly.com/dash-html-components/img). The corresponding keyword values are 'int', 'float', 'str', 'slider', 'dropdown', 'radio', 'bool', and 'img'.
 
 Legal keyword pairs: {'type': , 'name': , 'title': , 'param_key': , 'value': } and all the other legal keyword pairs in the corresponding Dash components. **Note**: 'name' is the unique string identifier.
 
