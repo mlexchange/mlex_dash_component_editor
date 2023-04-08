@@ -1,7 +1,14 @@
 # MLExchange Dash component editor
 This script creates adaptive Dash GUI component from keywords (JSON format data).
 
-Dependency: dash==2.9.0
+Dependencies:
+
+```
+dash>=2.9.0,
+dash_daq==0.5.0,
+dash_bootstrap_components>=1.0.0,
+werkzeug==2.0
+```
 
 
 ## Code example
