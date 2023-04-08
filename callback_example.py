@@ -1,6 +1,5 @@
 from dash import Dash, html
 from dash_component_editor import JSONParameterEditor
-import json
 
 # data
 component_kwargs = {"gui_parameters": [{"type": "int", "name": "num-tree", "title": "Number of Trees", "param_key": "n_estimators", "value": "30"}, 
