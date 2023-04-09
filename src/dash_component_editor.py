@@ -8,9 +8,9 @@ import dash_bootstrap_components as dbc
 import dash_daq as daq
 
 import base64
-import PIL.Image
+#import PIL.Image
 import io
-import plotly.express as px
+#import plotly.express as px
 # Procedural dash form generation
 
 """
