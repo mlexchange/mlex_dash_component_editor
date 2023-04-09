@@ -10,9 +10,9 @@ Legal keyword pairs: {'type': xxx, 'name': xxx, 'title': xxx, 'param_key': xxx, 
 ## Dependencies:
 
 ```
-dash>=2.9.0,
-dash_daq==0.5.0,
-dash_bootstrap_components>=1.0.0,
+dash>=2.9.0
+dash_bootstrap_components>=1.0.0
+dash_daq>=0.1.0
 werkzeug==2.0
 ```
 
@@ -28,7 +28,7 @@ component_kwargs = {"gui_parameters": [{"type": "int", "name": "num-tree", "titl
                                        {"type": "int", "name": "tree-depth", "title": "Tree Depth", "param_key": "max_depth", "value": "8"}]}
 
 
-# Set up Dash server and web layouts
+# set up Dash server and web layouts
 app = Dash(__name__)
 app.layout = html.Div ([html.Button('Show GUI', id='button', n_clicks=0),
                         html.Div(id='gui-layout', children=[])
