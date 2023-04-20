@@ -1,2 +1,0 @@
-dash-component-editor==0.0.4
-
