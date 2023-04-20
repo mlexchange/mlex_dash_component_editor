@@ -13,7 +13,6 @@ Legal keyword pairs: {'type': xxx, 'name': xxx, 'title': xxx, 'param_key': xxx, 
 dash>=2.9.0
 dash_bootstrap_components>=1.0.0
 dash_daq>=0.1.0
-werkzeug==2.0
 ```
 
 

@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="dash_component_editor",                     # This is the name of the package
-    version="0.0.5",                        # The release version
+    version="0.0.6",                        # The release version
     author="Zhuowen (Kevin) Zhao, Ronald Pandolfi",                     # Full name of the author
     author_email='zwenzhao11@gmail.com',
     description="",
@@ -29,6 +29,5 @@ setuptools.setup(
     install_requires=['dash>=2.9.0',
                       'dash_bootstrap_components>=1.0.0',
                       'dash_daq>=0.1.0',
-                      'werkzeug==2.0',
                     ]                     # Install other dependencies if any
 )
