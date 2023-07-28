@@ -315,12 +315,12 @@ class ParameterEditor(dbc.Form):
         self.children = self.build_children()
 
     def init_callbacks(self, app):
-        app.callback(Output(self.id, 'n_submit', allow_duplicate=True), 
+        app.callback(Output(self.id, 'n_submit'), 
                      Input({**self.id,
                             'name': ALL},
                             'value'), 
                      State(self.id, 'n_submit'), 
-                     prevent_initial_call=True)
+                    )
                      
         for child in self.children:
             if hasattr(child,"init_callbacks"):
