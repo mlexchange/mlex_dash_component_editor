@@ -21,6 +21,7 @@ dash_daq>=0.1.0
 ```python
 from dash import Dash, html, Input, Output
 from dash_component_editor import JSONParameterEditor
+import uuid
 
 # data
 component_kwargs = {"gui_parameters": [{"type": "int", "name": "num-tree", "title": "Number of Trees", "param_key": "n_estimators", "value": "30"}, 
@@ -46,7 +47,7 @@ app.layout = html.Div ([html.Button('Show GUI', id='button', n_clicks=0),
     prevent_initial_call=True
 )
 def show_gui_layouts(n_clicks):
-    item_list = JSONParameterEditor(_id={'type': 'parameter_editor'},
+    item_list = JSONParameterEditor(_id={'type': str(uuid.uuid4())},
                                     json_blob=component_kwargs["gui_parameters"],
                                 )
     item_list.init_callbacks(app)
