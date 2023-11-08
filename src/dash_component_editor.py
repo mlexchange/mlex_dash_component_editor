@@ -317,15 +317,16 @@ class ParameterEditor(dbc.Form):
     def init_callbacks(self, app):
         app.callback(Output(self.id, 'n_submit'), 
                      Input({**self.id,
-                            'name': ALL},
+                            'name': MATCH},
                             'value'), 
                      State(self.id, 'n_submit'), 
                     )
-                     
+        
         for child in self.children:
             if hasattr(child,"init_callbacks"):
-                child.init_callbacks(app)  
-
+                child.init_callbacks(app)   
+    
+    
     @property
     def values(self):
         return {param['name']: param.get('value', None) for param in self._parameters} 
