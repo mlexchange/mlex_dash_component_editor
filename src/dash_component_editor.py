@@ -317,7 +317,7 @@ class ParameterEditor(dbc.Form):
     def init_callbacks(self, app):
         app.callback(Output(self.id, 'n_submit'), 
                      Input({**self.id,
-                            'name': MATCH},
+                            'name': ALL},
                             'value'), 
                      State(self.id, 'n_submit'), 
                     )
