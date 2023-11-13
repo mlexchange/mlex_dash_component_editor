@@ -1,16 +1,13 @@
-from debian:11
-#FROM python:3.9
+FROM ubuntu:latest
 MAINTAINER THE MLEXCHANGE TEAM
 
-RUN apt-get update
-
-RUN apt-get install -y \
-    apt-transport-https \
-    ca-certificates \
-    dnsutils \
-    curl \
-    gnupg \
-    lsb-release
+#RUN apt-get install -y \
+#    apt-transport-https \
+#    ca-certificates \
+#    dnsutils \
+#    curl \
+#    gnupg \
+#    lsb-release
 
 
 RUN apt-get update
@@ -22,7 +19,7 @@ RUN apt-get install -y python3-pip\
 COPY docker/requirements.txt requirements.txt
 
 RUN pip3 install --upgrade pip &&\
-    pip3 install --timeout=5000 -r requirements.txt 
+    pip3 install -r requirements.txt 
 
 
 WORKDIR /app/example
