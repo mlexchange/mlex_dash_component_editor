@@ -1,17 +1,8 @@
 FROM ubuntu:latest
 MAINTAINER THE MLEXCHANGE TEAM
 
-#RUN apt-get install -y \
-#    apt-transport-https \
-#    ca-certificates \
-#    dnsutils \
-#    curl \
-#    gnupg \
-#    lsb-release
-
 
 RUN apt-get update
-
 RUN apt-get install -y python3-pip\
     python3
 
@@ -26,10 +17,4 @@ WORKDIR /app/example
 ENV HOME /app/example
 COPY src src
 
-ENV PYTHONUNBUFFERED=1
-
-#ENTRYPOINT [ "python3" ]
-
-
-CMD ["bash"]
 CMD python3 src/callback_example.py
