@@ -1,10 +1,5 @@
-FROM ubuntu:latest
+FROM python:3.9
 MAINTAINER THE MLEXCHANGE TEAM
-
-
-RUN apt-get update
-RUN apt-get install -y python3-pip\
-    python3
 
 
 COPY docker/requirements.txt requirements.txt
